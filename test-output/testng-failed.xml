@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MainDemo">
+      <class name="MainDemo2">
         <methods>
-          <include name="runOnCrome"/>
+          <include name="runOnCrome" invocation-numbers="0"/>
+          <include name="setpu"/>
+          <include name="closing"/>
         </methods>
-      </class> <!-- MainDemo -->
+      </class> <!-- MainDemo2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
