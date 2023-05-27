@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Robi\AppData\Local\Temp\testng-eclipse-448891606\testng-customsuite.xml</span>
+                    <span>C:\Users\Robi\AppData\Local\Temp\testng-eclipse-1245263922\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Alerttesting.Alerttesting" class="method navigator-link" hash-for-method="aterttest2">aterttest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,22 +118,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="MainDemo2" class="method navigator-link" hash-for-method="runOnCrome(standard_user, secret_sauce)">runOnCrome(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Alerttesting.Alerttesting" class="method navigator-link" hash-for-method="alerttest">alerttest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="MainDemo2" class="method navigator-link" hash-for-method="runOnCrome(locked_out_user, secret_sauce)">runOnCrome(locked_out_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Alerttesting.Alerttesting" class="method navigator-link" hash-for-method="aterttest3">aterttest3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="MainDemo2" class="method navigator-link" hash-for-method="runOnCrome(problem_user, secret_sauce)">runOnCrome(problem_user, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="MainDemo2" class="method navigator-link" hash-for-method="runOnCrome(performance_glitch_user, secret_sauce)">runOnCrome(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Alerttesting.Alerttesting" class="method navigator-link" hash-for-method="aterttest4">aterttest4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -134,42 +143,96 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">MainDemo2</span>
+              <img src="failed.png"/>
+              <span class="class-name">Alerttesting.Alerttesting</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runOnCrome(standard_user, secret_sauce)">
-                  </a> <!-- runOnCrome(standard_user, secret_sauce) -->
-                  <span class="method-name">runOnCrome</span>
-                  <span class="parameters">(standard_user, secret_sauce)</span>
+                  <a name="aterttest2">
+                  </a> <!-- aterttest2 -->
+                  <span class="method-name">aterttest2</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=113.0.5672.127)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecd488490ae2865d786b0eecbe00eea0, clearElement {id=F19C67A66EBC35222D91AEB0139F6C85_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Robi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecd488490ae2865d786b0eecbe00eea0)] -&gt; xpath: //*[@id=&quot;content&quot;]/div/ul/li[2]/button]
+Session ID: ecd488490ae2865d786b0eecbe00eea0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132)
+	at Alerttesting.Alerttesting.aterttest2(Alerttesting.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Alerttesting.Alerttesting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="alerttest">
+                  </a> <!-- alerttest -->
+                  <span class="method-name">alerttest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runOnCrome(locked_out_user, secret_sauce)">
-                  </a> <!-- runOnCrome(locked_out_user, secret_sauce) -->
-                  <span class="method-name">runOnCrome</span>
-                  <span class="parameters">(locked_out_user, secret_sauce)</span>
+                  <a name="aterttest3">
+                  </a> <!-- aterttest3 -->
+                  <span class="method-name">aterttest3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runOnCrome(problem_user, secret_sauce)">
-                  </a> <!-- runOnCrome(problem_user, secret_sauce) -->
-                  <span class="method-name">runOnCrome</span>
-                  <span class="parameters">(problem_user, secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runOnCrome(performance_glitch_user, secret_sauce)">
-                  </a> <!-- runOnCrome(performance_glitch_user, secret_sauce) -->
-                  <span class="method-name">runOnCrome</span>
-                  <span class="parameters">(performance_glitch_user, secret_sauce)</span>
+                  <a name="aterttest4">
+                  </a> <!-- aterttest4 -->
+                  <span class="method-name">aterttest4</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,7 +240,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Robi\AppData\Local\Temp\testng-eclipse-448891606\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Robi\AppData\Local\Temp\testng-eclipse-1245263922\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,7 +249,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;MainDemo2&quot;/&gt;
+      &lt;class name=&quot;Alerttesting.Alerttesting&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -228,26 +291,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runOnCrome')
-data.setCell(0, 2, 'MainDemo2')
-data.setCell(0, 3, 21745);
+data.setCell(0, 1, 'aterttest4')
+data.setCell(0, 2, 'Alerttesting.Alerttesting')
+data.setCell(0, 3, 3682);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runOnCrome')
-data.setCell(1, 2, 'MainDemo2')
-data.setCell(1, 3, 8553);
+data.setCell(1, 1, 'aterttest3')
+data.setCell(1, 2, 'Alerttesting.Alerttesting')
+data.setCell(1, 3, 3652);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runOnCrome')
-data.setCell(2, 2, 'MainDemo2')
-data.setCell(2, 3, 3783);
+data.setCell(2, 1, 'alerttest')
+data.setCell(2, 2, 'Alerttesting.Alerttesting')
+data.setCell(2, 3, 3178);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runOnCrome')
-data.setCell(3, 2, 'MainDemo2')
-data.setCell(3, 3, 3494);
+data.setCell(3, 1, 'aterttest2')
+data.setCell(3, 2, 'Alerttesting.Alerttesting')
+data.setCell(3, 3, 154);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -273,54 +336,88 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">MainDemo2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Alerttesting.Alerttesting</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setpu</span>
+                <span class="method-name">webdriversetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runOnCrome(standard_user, secret_sauce)</span>
-                <span class="method-start">21126 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closing</span>
-                <span class="method-start">42944 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setpu</span>
-                <span class="method-start">46818 ms</span>
+                <span class="method-name">browserconfig</span>
+                <span class="method-start">4129 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runOnCrome(locked_out_user, secret_sauce)</span>
-                <span class="method-start">61344 ms</span>
+                <span class="method-name">alerttest</span>
+                <span class="method-start">12961 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closing</span>
-                <span class="method-start">65136 ms</span>
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">16151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16314 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setpu</span>
-                <span class="method-start">65721 ms</span>
+                <span class="method-name">webdriversetup</span>
+                <span class="method-start">16491 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">browserconfig</span>
+                <span class="method-start">18081 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runOnCrome(problem_user, secret_sauce)</span>
-                <span class="method-start">69435 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">aterttest2</span>
+                <span class="method-start">23407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closing</span>
-                <span class="method-start">72933 ms</span>
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">23579 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23743 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setpu</span>
-                <span class="method-start">73341 ms</span>
+                <span class="method-name">webdriversetup</span>
+                <span class="method-start">23902 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">browserconfig</span>
+                <span class="method-start">25577 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runOnCrome(performance_glitch_user, secret_sauce)</span>
-                <span class="method-start">77192 ms</span>
+                <span class="method-name">aterttest3</span>
+                <span class="method-start">30796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closing</span>
-                <span class="method-start">85748 ms</span>
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">34454 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">webdriversetup</span>
+                <span class="method-start">36452 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">browserconfig</span>
+                <span class="method-start">38082 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aterttest4</span>
+                <span class="method-start">42737 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">46421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48349 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

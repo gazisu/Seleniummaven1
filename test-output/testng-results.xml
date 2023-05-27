@@ -1,109 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-13T12:00:16 BDT" name="Default suite" finished-at="2023-05-13T12:01:43 BDT" duration-ms="86342">
+  <suite started-at="2023-05-27T12:33:34 BDT" name="Default suite" finished-at="2023-05-27T12:34:22 BDT" duration-ms="48575">
     <groups>
     </groups>
-    <test started-at="2023-05-13T12:00:16 BDT" name="Default test" finished-at="2023-05-13T12:01:43 BDT" duration-ms="86342">
-      <class name="MainDemo2">
-        <test-method is-config="true" signature="setpu()[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:00:16 BDT" name="setpu" finished-at="2023-05-13T12:00:38 BDT" duration-ms="21122" status="PASS">
+    <test started-at="2023-05-27T12:33:34 BDT" name="Default test" finished-at="2023-05-27T12:34:22 BDT" duration-ms="48575">
+      <class name="Alerttesting.Alerttesting">
+        <test-method is-config="true" signature="webdriversetup()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:34 BDT" name="webdriversetup" finished-at="2023-05-27T12:33:38 BDT" duration-ms="4127" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setpu -->
-        <test-method signature="runOnCrome(java.lang.String,java.lang.String)[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:00:38 BDT" name="runOnCrome" data-provider="user-data" finished-at="2023-05-13T12:00:59 BDT" duration-ms="21745" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- webdriversetup -->
+        <test-method is-config="true" signature="browserconfig()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:38 BDT" name="browserconfig" finished-at="2023-05-27T12:33:47 BDT" duration-ms="8831" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runOnCrome -->
-        <test-method is-config="true" signature="closing()[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:00:59 BDT" name="closing" finished-at="2023-05-13T12:01:03 BDT" duration-ms="3874" status="PASS">
+        </test-method> <!-- browserconfig -->
+        <test-method signature="alerttest()[pri:1, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:47 BDT" name="alerttest" finished-at="2023-05-27T12:33:50 BDT" duration-ms="3178" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closing -->
-        <test-method is-config="true" signature="setpu()[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:03 BDT" name="setpu" finished-at="2023-05-13T12:01:18 BDT" duration-ms="14526" status="PASS">
+        </test-method> <!-- alerttest -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:50 BDT" name="closebrowser" finished-at="2023-05-27T12:33:50 BDT" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setpu -->
-        <test-method signature="runOnCrome(java.lang.String,java.lang.String)[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:18 BDT" name="runOnCrome" data-provider="user-data" finished-at="2023-05-13T12:01:22 BDT" duration-ms="3783" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:50 BDT" name="tearDown" finished-at="2023-05-27T12:33:50 BDT" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runOnCrome -->
-        <test-method is-config="true" signature="closing()[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:22 BDT" name="closing" finished-at="2023-05-13T12:01:22 BDT" duration-ms="584" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="webdriversetup()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:50 BDT" name="webdriversetup" finished-at="2023-05-27T12:33:52 BDT" duration-ms="1590" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closing -->
-        <test-method is-config="true" signature="setpu()[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:22 BDT" name="setpu" finished-at="2023-05-13T12:01:26 BDT" duration-ms="3713" status="PASS">
+        </test-method> <!-- webdriversetup -->
+        <test-method is-config="true" signature="browserconfig()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:52 BDT" name="browserconfig" finished-at="2023-05-27T12:33:57 BDT" duration-ms="5325" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setpu -->
-        <test-method signature="runOnCrome(java.lang.String,java.lang.String)[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:26 BDT" name="runOnCrome" data-provider="user-data" finished-at="2023-05-13T12:01:29 BDT" duration-ms="3494" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- browserconfig -->
+        <test-method signature="aterttest2()[pri:2, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:57 BDT" name="aterttest2" finished-at="2023-05-27T12:33:57 BDT" duration-ms="154" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[invalid element state
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecd488490ae2865d786b0eecbe00eea0, clearElement {id=F19C67A66EBC35222D91AEB0139F6C85_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Robi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecd488490ae2865d786b0eecbe00eea0)] -> xpath: //*[@id="content"]/div/ul/li[2]/button]
+Session ID: ecd488490ae2865d786b0eecbe00eea0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecd488490ae2865d786b0eecbe00eea0, clearElement {id=F19C67A66EBC35222D91AEB0139F6C85_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Robi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49483}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49483/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecd488490ae2865d786b0eecbe00eea0)] -> xpath: //*[@id="content"]/div/ul/li[2]/button]
+Session ID: ecd488490ae2865d786b0eecbe00eea0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132)
+at Alerttesting.Alerttesting.aterttest2(Alerttesting.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runOnCrome -->
-        <test-method is-config="true" signature="closing()[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:29 BDT" name="closing" finished-at="2023-05-13T12:01:30 BDT" duration-ms="407" status="PASS">
+        </test-method> <!-- aterttest2 -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:57 BDT" name="closebrowser" finished-at="2023-05-27T12:33:57 BDT" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closing -->
-        <test-method is-config="true" signature="setpu()[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:30 BDT" name="setpu" finished-at="2023-05-13T12:01:34 BDT" duration-ms="3851" status="PASS">
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:57 BDT" name="tearDown" finished-at="2023-05-27T12:33:58 BDT" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setpu -->
-        <test-method signature="runOnCrome(java.lang.String,java.lang.String)[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:34 BDT" name="runOnCrome" data-provider="user-data" finished-at="2023-05-13T12:01:42 BDT" duration-ms="8553" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="webdriversetup()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:58 BDT" name="webdriversetup" finished-at="2023-05-27T12:33:59 BDT" duration-ms="1674" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runOnCrome -->
-        <test-method is-config="true" signature="closing()[pri:0, instance:MainDemo2@f5ac9e4]" started-at="2023-05-13T12:01:42 BDT" name="closing" finished-at="2023-05-13T12:01:43 BDT" duration-ms="531" status="PASS">
+        </test-method> <!-- webdriversetup -->
+        <test-method is-config="true" signature="browserconfig()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:33:59 BDT" name="browserconfig" finished-at="2023-05-27T12:34:05 BDT" duration-ms="5219" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closing -->
-      </class> <!-- MainDemo2 -->
+        </test-method> <!-- browserconfig -->
+        <test-method signature="aterttest3()[pri:3, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:34:05 BDT" name="aterttest3" finished-at="2023-05-27T12:34:08 BDT" duration-ms="3652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aterttest3 -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:34:08 BDT" name="closebrowser" finished-at="2023-05-27T12:34:10 BDT" duration-ms="1818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:34:10 BDT" name="tearDown" finished-at="2023-05-27T12:34:10 BDT" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="webdriversetup()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:34:10 BDT" name="webdriversetup" finished-at="2023-05-27T12:34:12 BDT" duration-ms="1629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webdriversetup -->
+        <test-method is-config="true" signature="browserconfig()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:34:12 BDT" name="browserconfig" finished-at="2023-05-27T12:34:16 BDT" duration-ms="4654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserconfig -->
+        <test-method signature="aterttest4()[pri:4, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:34:16 BDT" name="aterttest4" finished-at="2023-05-27T12:34:20 BDT" duration-ms="3682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aterttest4 -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:34:20 BDT" name="closebrowser" finished-at="2023-05-27T12:34:22 BDT" duration-ms="1928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Alerttesting.Alerttesting@1a451d4d]" started-at="2023-05-27T12:34:22 BDT" name="tearDown" finished-at="2023-05-27T12:34:22 BDT" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Alerttesting.Alerttesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

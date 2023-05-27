@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MainDemo2">
+      <class name="Alerttesting.Alerttesting">
         <methods>
-          <include name="runOnCrome" invocation-numbers="0"/>
-          <include name="setpu"/>
-          <include name="closing"/>
+          <include name="aterttest2"/>
+          <include name="closebrowser"/>
+          <include name="webdriversetup"/>
+          <include name="browserconfig"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- MainDemo2 -->
+      </class> <!-- Alerttesting.Alerttesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

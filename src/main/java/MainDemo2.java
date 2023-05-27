@@ -13,6 +13,7 @@ public class MainDemo2 {
 	
 	@BeforeMethod
 	void setpu() {
+
 	
 		WebDriverManager.chromedriver().setup();
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Robi\\Documents\\Drivers\\chromedriver.exe");
@@ -26,18 +27,20 @@ public class MainDemo2 {
 		driver.quit();
 		
 	}
-	@DataProvider(name="user-data")
-	Object[][] dataSet(){
-		Object[][]data= {
-				{"standard_user","secret_sauce"},
-				{"locked_out_user","secret_sauce"},
-				{"problem_user","secret_sauce"},
-				{"performance_glitch_user","secret_sauce"},
-		};
-		return data;
-	}
+//	@DataProvider(name="user-data")
+//	Object[][] dataSet(){
+//		Object[][]data= {
+//				{"standard_user","secret_sauce"},
+//				{"locked_out_user","secret_sauce"},
+//				{"problem_user","secret_sauce"},
+//				{"performance_glitch_user","secret_sauce"},
+//		};
+//		return data;
+//	}
 	
-	@Test(dataProvider="user-data")
+	
+	@Test(dataProviderClass = Exceldataprovider.class,  dataProvider="Excel-user-data")
+	
 	void runOnCrome(String username, String password) throws InterruptedException  {
 		
 		driver.findElement(By.id("user-name")).sendKeys(username);
