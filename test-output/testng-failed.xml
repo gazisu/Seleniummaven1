@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Alerttesting.Alerttesting">
+      <class name="Seleniummaven2.Netlifyapp">
         <methods>
-          <include name="aterttest2"/>
-          <include name="closebrowser"/>
-          <include name="webdriversetup"/>
-          <include name="browserconfig"/>
-          <include name="tearDown"/>
+          <include name="firstname"/>
+          <include name="setup"/>
+          <include name="browsercontrol"/>
         </methods>
-      </class> <!-- Alerttesting.Alerttesting -->
+      </class> <!-- Seleniummaven2.Netlifyapp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
