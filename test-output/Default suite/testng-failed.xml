@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Seleniummaven2.Netlifyapp">
+      <class name="MainDemo">
         <methods>
-          <include name="firstname"/>
-          <include name="setup"/>
-          <include name="browsercontrol"/>
+          <include name="runOnCrome"/>
+          <include name="runOnCrome3"/>
+          <include name="runOnCrome1"/>
+          <include name="runOnCrome2"/>
+          <include name="setpu"/>
         </methods>
-      </class> <!-- Seleniummaven2.Netlifyapp -->
+      </class> <!-- MainDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

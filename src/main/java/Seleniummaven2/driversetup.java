@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class driversetup {
-	protected WebDriver driver;
+	public static  WebDriver driver;
 	
 	@BeforeMethod
 	
@@ -19,14 +19,14 @@ public class driversetup {
 		
 	}
 	
-//	@AfterMethod
-//	
-//	void closing() {
-//		
-//		driver.close();
-//		driver.quit();
-//	}
-//	
+	@AfterMethod
+	
+	void closing() {
+		
+		driver.close();
+		driver.quit();
+	}
+	
 	
 	
 	

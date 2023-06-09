@@ -5,7 +5,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class MainDemo {
+import Alerttesting.Browsercontrol;
+import Seleniummaven2.driversetup;
+
+public class MainDemo extends driversetup{
 
 	@BeforeMethod
 	void setpu() {

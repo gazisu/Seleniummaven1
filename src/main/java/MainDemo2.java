@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -24,7 +25,7 @@ public class MainDemo2 {
 	@AfterMethod
 	void closing() {
 		driver.close();
-		driver.quit();
+	driver.quit();
 		
 	}
 //	@DataProvider(name="user-data")
@@ -48,6 +49,13 @@ public class MainDemo2 {
 		Thread.sleep(1000);
 		driver.findElement(By.id("login-button")).click();
 		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"react-burger-menu-btn\"]")).click();
+		Thread.sleep(2000);
+//		driver.findElement(By.id("logout_sidebar_link")).isDisplayed();
+		Boolean isDisplayed = driver.findElement(By.id("logout_sidebar_link")).isDisplayed();
+		Assert.assertTrue(isDisplayed);
+		
+		
 		
 		}
 	
